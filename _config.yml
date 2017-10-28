@@ -19,9 +19,9 @@ twitter:
     username: calbertof
 github_username:  jekyll
 
-
 # SEO
 google_site_verification: psDjVdUGM7kPoDMGKfXl5yCKfrFVodSnT1ralFoThiQ
+google_analytics: UA-81859649-3
 encoding: UTF-8
 kramdown:
    input: GFM
