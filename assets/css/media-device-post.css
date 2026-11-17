@@ -1,0 +1,25 @@
+/* Screenshots for the Android media-device project article. */
+.media-device-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 28px 0 36px;
+  align-items: start;
+}
+.media-device-gallery figure { margin: 0; min-width: 0; }
+.media-device-gallery figure:only-child { grid-column: 1 / -1; width: 100%; max-width: 340px; justify-self: center; }
+.media-device-gallery a { display: block; }
+.media-device-gallery img { display: block; width: 100%; height: min(680px, calc(200vw - 120px)); object-fit: contain; object-position: center top; border-radius: 12px; }
+.media-device-gallery figcaption { margin-top: 10px; color: #555; font-size: 14px; line-height: 1.5; }
+.media-device-gallery-wide { grid-template-columns: 1fr; }
+.media-device-gallery-wide img { height: auto; }
+@media (max-width: 560px) {
+  .media-device-gallery { grid-template-columns: 1fr; gap: 28px; }
+  .media-device-gallery figure { width: 100%; max-width: 340px; justify-self: center; }
+  .media-device-gallery-wide figure { max-width: none; }
+}
+
+.media-device-photo { margin: 28px auto 36px; max-width: 560px; }
+.media-device-photo a { display: block; }
+.media-device-photo img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.media-device-photo figcaption { margin-top: 10px; color: #555; font-size: 14px; line-height: 1.5; }
